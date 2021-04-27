@@ -157,6 +157,7 @@ if __name__=='__main__':
                         makeCheckpoint(sub_name)
                 else:
                     logger.warning("React to checkpoint! End program")
+                    raw_input("Press key to exit")
                     exit()
             page += 1
     links = getAllLinkFromFile()
@@ -171,4 +172,5 @@ if __name__=='__main__':
                 makeCheckpoint(sub_name)
         else:
             logger.warning("React to checkpoint! End program")
+            raw_input("Press key to exit")
             exit()
